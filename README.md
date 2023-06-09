@@ -1,6 +1,6 @@
-# Atividade Faculdade AZlogística
+# Atividade Faculdade -  AZlogística
 
-## Projeto final Disciplina Administração e Integração Logística
+## Projeto final da disciplina Administração e Integração Logística
 
 #### Atividade em grupo proposta no final do semestre.
 #### Projeto de validação de entregas via QRCode.
