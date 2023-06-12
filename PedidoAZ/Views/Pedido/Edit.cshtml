@@ -4,9 +4,8 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Receber Pedido</h1>
 
-<h4>PedidoModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,39 +13,70 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="Produto" class="control-label"></label>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Produto" />
+@*              <label asp-for="Produto" class="control-label"></label>
                 <input asp-for="Produto" class="form-control" />
-                <span asp-validation-for="Produto" class="text-danger"></span>
+                <span asp-validation-for="Produto" class="text-danger"></span>*@
             </div>
             <div class="form-group">
-                <label asp-for="NomeCliente" class="control-label"></label>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="NomeCliente" />
+@*              <label asp-for="NomeCliente" class="control-label"></label>
                 <input asp-for="NomeCliente" class="form-control" />
-                <span asp-validation-for="NomeCliente" class="text-danger"></span>
+                <span asp-validation-for="NomeCliente" class="text-danger"></span>*@
             </div>
             <div class="form-group">
-                <label asp-for="Endereco" class="control-label"></label>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Endereco" />
+@*              <label asp-for="Endereco" class="control-label"></label>
                 <input asp-for="Endereco" class="form-control" />
-                <span asp-validation-for="Endereco" class="text-danger"></span>
+                <span asp-validation-for="Endereco" class="text-danger"></span>*@
             </div>
             <div class="form-group">
-                <label asp-for="DataPedido" class="control-label"></label>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="DataPedido" />
+@*              <label asp-for="DataPedido" class="control-label"></label>
                 <input asp-for="DataPedido" class="form-control" />
-                <span asp-validation-for="DataPedido" class="text-danger"></span>
+                <span asp-validation-for="DataPedido" class="text-danger"></span>*@
             </div>
+            <br/>
             <div class="form-group">
-                <label asp-for="Recebido" class="control-label"></label>
+                <label asp-for="Recebido" class="control-label"><h4>O pedido foi Recebido?</h4></label>
+
+                <div>
+                    <br/>
+                    <label>
+                        <input type="radio" asp-for="Recebido" value="true" /> Sim
+                    </label>
+                    <label>
+                        <input type="radio" asp-for="Recebido" value="false" /> Não
+                    </label>
+                </div>
+
+            <span asp-validation-for="Recebido" class="text-danger"></span>
+            </div>
+
+@*            <div class="form-group">
+                <label asp-for="Recebido" class="control-label">O pedido foi Recebido?</label>
                 <input asp-for="Recebido" class="form-control" />
                 <span asp-validation-for="Recebido" class="text-danger"></span>
-            </div>
+            </div>*@
+
+            <br/>
+            <br/>
+
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Pedido recebido" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
+<br/>
+
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar para Pedidos</a>
 </div>
 
 @section Scripts {
