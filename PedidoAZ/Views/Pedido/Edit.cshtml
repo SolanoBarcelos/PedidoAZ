@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Edit";
 }
-
+<div class="text-center">
 <h1>Receber Pedido</h1>
 
 <hr />
@@ -42,7 +42,7 @@
             </div>
             <br/>
             <div class="form-group">
-                <label asp-for="Recebido" class="control-label"><h4>O pedido foi Recebido?</h4></label>
+                <label asp-for="Recebido" class="control-label"><h4>O cliente esta com o pedido?</h4></label>
 
                 <div>
                     <br/>
@@ -77,6 +77,7 @@
 
 <div>
     <a asp-action="Index">Voltar para Pedidos</a>
+</div>
 </div>
 
 @section Scripts {
